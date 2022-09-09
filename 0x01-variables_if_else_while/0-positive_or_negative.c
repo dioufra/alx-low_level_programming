@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print whether the number stored in the variable n is positive or negative
+ * main - Prints is number is positive, negative or zero
  * Return: Always 0 (Success)
  */
 
@@ -15,18 +15,21 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	/* n is greater than 0 */
-	if (n > 0) {
-		printf("is positive");
+	if (n > 0)
+       	{
+		printf("%d is positive\n", n);
 	}
 
 	/* n is equal to 0 */
-	if (n == 0) {
-		printf("is zero");
+	if (n == 0)
+       	{
+		printf("%d is zero\n", n);
 	}
 
 	/* n is less than 0 */
-	if (n < 0) {
-		printf("is negative");
+	if (n < 0) 
+	{
+		printf("%d is negative\n", n);
 	}
 
 	return (0);
