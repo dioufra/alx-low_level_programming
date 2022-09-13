@@ -1,6 +1,6 @@
-#0x02. C - Functions, nested loops
+## 0x02. C - Functions, nested loops
 
-##Requirements
+## Requirements
 
 - Allowed editors: vi, vim, emacs
 
