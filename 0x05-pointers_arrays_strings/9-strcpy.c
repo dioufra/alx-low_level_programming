@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * trcpy - Write a function that reverses a string.
+ * _trcpy - Write a function that reverses a string.
  * @dest: destination of copy
  * @src: source of copy
  * Return: destination(dest) pointer
