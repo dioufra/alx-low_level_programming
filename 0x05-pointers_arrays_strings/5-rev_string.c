@@ -9,11 +9,10 @@ void rev_string(char *str)
 {
 	int i = 0;
 	int length = 0;
+	char tmp[100];
 
 	while (*++str)
 		length++;
-
-	char tmp[length];
 
 	str -= length + 1;
 
