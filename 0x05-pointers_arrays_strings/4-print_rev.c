@@ -15,8 +15,10 @@ void print_rev(char *s)
 	while (*s != '\0')
 	{
 		length_s++;
-		s++;
+		++s;
 	}
+
+	s--;
 
 	for (i = length_s; i < 0; i--)
 	{
