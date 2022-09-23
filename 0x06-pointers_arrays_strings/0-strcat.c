@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat - function that concatenate two strings
+ * _strcat - function that concatenate two strings
  * @src: source string
  * @dest: destination sring
  * Return:pointer to the concatenated string
