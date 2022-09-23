@@ -2,10 +2,8 @@
 
 /**
  * *_strcat - function that concatenate two strings
- *
  * @src: source string
  * @dest: destination sring
- *
  * Return:pointer to the concatenated string
  */
 
