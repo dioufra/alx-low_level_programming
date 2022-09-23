@@ -12,15 +12,16 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *copy = dest;
-	int i = 1;
+	int i = 0;
+	int j = 0;
 
-	while (*copy++)
+	while (*dest++)
 		i++;
 
-	while (*src)
-		dest[i] = *src++;
+	for (j = 0; j <= i && src[i] != '\0'; j++)
+		dest[i + j] = src[j];
+
+	dest[i + j] = '\0';
 
 	return (dest);
 }
-
