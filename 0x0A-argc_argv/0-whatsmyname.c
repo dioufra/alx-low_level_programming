@@ -4,6 +4,7 @@
  * main - program that prints its name
  * @argc: number of arguments
  * @argv: pointer to an array of character string
+ * Return: Always 0 on success
  */
 
 int main(int argc, char *argv[])
