@@ -6,7 +6,7 @@
  * @max: The last value of the array.
  *
  * Return: SUCCESS - a pointer to the newly created array.
- * 	   Otherwise (min > max or malloc fails) - NULL
+ *	   Otherwise (min > max or malloc fails) - NULL
  */
 
 int *array_range(int min, int max)
