@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
+#include "dog.h"
 
 /**
- *_strlen - returns the length of a string
+ * _strlen - returns the length of a string
  * @s: string to evaluate
  * Return: the length of the string
  */
@@ -25,7 +25,7 @@ int _strlen(char *s)
 
 
 /**
- *_strcpy - copies the string pointed to by src to dest
+ * _strcpy - copies the string pointed to by src to dest
  * @dest: string to copy to
  * @src: string to be copied
  * Return: the pointer to dest
