@@ -8,21 +8,19 @@
  *
  * Return: pointer to the node of interet, or a NULL
  */
-listint_t *get_nodeint_at_index(listint_t *head, unsigend int index)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i = 0;
+	listint_t *tmp = head;
 
-	if (head == NULL)
-		return (NULL);
-
-	while (head != NULL && i < index)
+	while (tmp && i < index)
 	{
-		head = head->next;
+		tmp = tmp->next;
 		i++;
 	}
 
 	if (i == index)
-		return (head);
+		return (tmp);
 
 	return (NULL);
 }
