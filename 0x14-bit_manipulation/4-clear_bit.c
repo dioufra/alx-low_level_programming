@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * clear_bit - gets the value of the bit at a given index.
+ * clear_bit - clear bit to 0 at a given index.
  *
  * @n: number
  * @index: index
@@ -15,7 +15,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	max_bits_number = (sizeof(unsigned long int) * 8);
 
-	if (index >= max_bits_number)
+	if (index > max_bits_number)
 		return (-1);
 
 	m = ~(m << index);
