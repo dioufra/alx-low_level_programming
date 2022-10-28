@@ -11,6 +11,7 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int bit;
+	unsigned int max_bits_number;
 
 	max_bits_number = malloc(sizeof(unsigned long int) * 8);
 
