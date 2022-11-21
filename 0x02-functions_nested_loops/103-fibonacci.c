@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the sum of even-valued terms of the fibonacci numbers
+ * main - prints the sum of even-valued terms of the first 30 fibonacci numbers
  * Return: Always 0
  */
 int main(void)
@@ -10,7 +10,7 @@ int main(void)
 	unsigned long sum = 2;
 	int counter = 0;
 
-	for (counter = 2; counter <= 49; counter++)
+	for (counter = 2; counter <= 30; counter++)
 	{
 		nextNum = prevNum1 + prevNum2;
 		if (nextNum % 2 == 0)
