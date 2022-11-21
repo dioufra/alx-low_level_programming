@@ -9,7 +9,7 @@ int main(void)
 	unsigned long prevNum1 = 1, prevNum2 = 2, nextNum;
 	int counter = 0;
 
-	printf("%lu , %lu ,", prevNum1, prevNum2);
+	printf("%lu, %lu, ", prevNum1, prevNum2);
 	for (counter = 2; counter <= 49; counter++)
 	{
 		nextNum = prevNum1 + prevNum2;
