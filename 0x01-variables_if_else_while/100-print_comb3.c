@@ -3,7 +3,7 @@
 
 /**
  * main - print all combinations of two digits form 01 through 89
- * Retturn: Always 0
+ * Return: Always 0
  */
 int main(void)
 {
