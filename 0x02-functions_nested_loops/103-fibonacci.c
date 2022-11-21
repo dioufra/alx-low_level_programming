@@ -8,9 +8,9 @@ int main(void)
 {
 	unsigned long prevNum1 = 1, prevNum2 = 2, nextNum;
 	unsigned long sum = 2;
-	int counter = 0;
+	int counter;
 
-	for (counter = 2; counter <= 30; counter++)
+	for (counter = 0; counter < 30; counter++)
 	{
 		nextNum = prevNum1 + prevNum2;
 		if (nextNum % 2 == 0)
