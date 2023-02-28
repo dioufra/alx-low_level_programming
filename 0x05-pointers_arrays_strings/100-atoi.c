@@ -2,36 +2,33 @@
 
 /**
  * _atoi - converts a string to an integer
- * @s: pointer to the first character of the string
- *
- * Return: the parsed integer
+ * @s: string
+ * Return: modified string
  */
 int _atoi(char *s)
 {
-	int negSigns = 1, num = 0, isDigit = 0, len, i, j;
+	int c = 0, n = 0, sign = 0, i = 0;
+	int len, digit;
 
-	for (len = 0; s[len]; len++)
+	for (i = 0; s[i]; i++)
 		;
+
+	len = i;
+
 	for (i = 0; i < len; i++)
 	{
-		if (s[i] == '-' && isDigit != 1)
-			negSigns++;
-		else if (s[i] >= '0' && s[i] <= '9')
+		digit = s[i] - '0';
+		if (s[i] == '-')
+			sign++;
+		else if (s[i]) >= '0' && s[i] <= '9')
 		{
-			isDigit = 1;
-			for (j = i; j < len; j++)
-			{
-				if (s[j] >= '0' && s[j] <= '9')
-				{
-					num = 10 * num + (s[j] - '0');
-				}
-				else
-					break;
-			}
-			break;
+			c = 1;
+			if (sign % 2 != 0)
+				digit = -digit;
+			n = 10 * n + digit;
 		}
+		else if ((s[i] < '0' || s[i] > '9') && c == 1)
+			break;
 	}
-	if (negSigns % 2)
-		return (num);
-	return (-num);
+	return (n);
 }
