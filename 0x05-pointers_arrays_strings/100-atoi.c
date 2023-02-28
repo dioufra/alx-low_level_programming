@@ -10,17 +10,14 @@ int _atoi(char *s)
 	int c = 0, n = 0, sign = 0, i = 0;
 	int len, digit;
 
-	for (i = 0; s[i]; i++)
+	for (len = 0; s[len]; len++)
 		;
-
-	len = i;
-
 	for (i = 0; i < len; i++)
 	{
 		digit = s[i] - '0';
 		if (s[i] == '-')
 			sign++;
-		else if (s[i]) >= '0' && s[i] <= '9')
+		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			c = 1;
 			if (sign % 2 != 0)
