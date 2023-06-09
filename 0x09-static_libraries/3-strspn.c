@@ -10,7 +10,6 @@ int _strspn(char *s, char *accept)
 {
     unsigned int count = 0;
     int i;
-
     while (*s)
     {
         for (index = 0; accept[i]; i++)
