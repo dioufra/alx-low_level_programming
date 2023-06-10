@@ -12,22 +12,22 @@
 
 int main(int argc, char **argv)
 {
-    int res, i, j;
+	int res, i, j;
 
-    for (i = 1; i < argc; i++)
-    {
-	    char *arg = argv[i];
+	for (i = 1; i < argc; i++)
+	{
+		char *arg = argv[i];
 
-	    for (j = 0; arg[j]; j++)
-	    {
-		    if (arg[j] < '0' || arg[j] > '9')
-		    {
-			    printf("Error\n");
-			    return (1);
-		    }
-	    }
-	    res += atoi(arg);
-    }
-    printf("%d\n", res);
-    return (0);
+		for (j = 0; arg[j]; j++)
+		{
+			if (arg[j] < '0' || arg[j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		res += atoi(arg);
+	}
+	printf("%d\n", res);
+	return (0);
 }
