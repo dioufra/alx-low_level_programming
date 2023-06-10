@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 
     for (i = 1; i < argc; i++)
     {
-	    char arg = argv[i];
+	    char *arg = argv[i];
 
 	    for (j = 0; arg[j]; j++)
 	    {
