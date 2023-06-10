@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all argument it receives
+ * main - multiplies two numbers
  *
  * @argc: number of command line arguments
  * @argv: array containing the command line arguments
@@ -12,7 +12,7 @@
 
 int main(int argc, char **argv)
 {
-    int res;
+	int res;
 
 	if (argc != 3)
 	{
@@ -21,6 +21,6 @@ int main(int argc, char **argv)
 	}
 
 	res =  (atoi(argv[1]) * atoi(argv[2]));
-    printf("%d\n", res);
-    return (0);
+	printf("%d\n", res);
+	return (0);
 }
