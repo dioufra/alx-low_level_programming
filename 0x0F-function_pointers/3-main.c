@@ -11,7 +11,7 @@
  * Return: 0 on success
  */
 
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int num1, num2;
 	int (*f)(int, int);
@@ -26,7 +26,7 @@ int main(int argc, char *argv)
 	num2 = atoi(argv[3]);
 	f = get_op_func(argv[2]);
 
-	if (f == NULL || argv[2][0] != '\0')
+	if (f == NULL || argv[2][0] == '\0')
 	{
 		printf("Error\n");
 		exit(99);

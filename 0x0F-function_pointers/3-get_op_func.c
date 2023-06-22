@@ -9,7 +9,7 @@
  * Return: a pointer to a function returning an integer
  */
 
-int (*get_op_func(char *s))(int int)
+int (*get_op_func(char *s))(int, int)
 {
 	int i;
 	op_t ops[] = {
@@ -23,8 +23,9 @@ int (*get_op_func(char *s))(int int)
 
 	while (ops[i].operator != NULL)
 	{
-		if *ops[i].operator == *s
+		if (*ops[i].operator == *s)
 			return (*ops[i].f);
+		i++;
 	}
 	return (NULL);
 }
