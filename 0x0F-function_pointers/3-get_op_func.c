@@ -21,9 +21,9 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 
-	while (ops[i].operator != NULL)
+	while (ops[i].op != NULL)
 	{
-		if (*ops[i].operator == *s)
+		if (*ops[i].op == *s)
 			return (*ops[i].f);
 		i++;
 	}
