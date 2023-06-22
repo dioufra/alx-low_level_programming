@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
 	{
-		printf("Erro\n");
+		printf("Error\n");
 		exit(100);
 	}
 	printf("%d\n", f(num1, num2));
