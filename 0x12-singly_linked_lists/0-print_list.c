@@ -1,4 +1,4 @@
-#include "main.h"
+#include "list.h"
 
 /**
  * print_list - prints all elements of a list
